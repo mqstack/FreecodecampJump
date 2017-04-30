@@ -1,0 +1,308 @@
+
+body {
+	margin: 0;
+	margin-bottom: 0;
+	padding: 0;
+	color: #666;
+	background: #888;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+}
+#banner {
+	background:rgb(114, 40, 114);
+	color: #fff;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top:0;
+	z-index: 1030;
+}
+
+#banner nav {
+	background: transparent;
+	border: 0px;
+	margin: 0;
+	font-size:13px;
+  -webkit-transition:all .3s;
+  transition:all .3s;
+}
+header img {
+	width: 50px;
+	height: auto;
+	border-radius: 50%;
+	margin: 20px 50px;
+	max-width: 80%;
+}
+.index-right {
+}
+.index-right ul {
+	margin-top: 20px;
+}
+.index-right li {
+	font-size: 0.75em;
+	font-weight: bold;
+	margin: 0;
+}
+
+main header{
+	margin: 0;
+	padding: 0;
+}
+
+hr.star-bright, hr.star-dark {
+	padding: 0;
+	border: 0;
+	border-top: solid 5px;
+	text-align: right;
+}
+ hr.star-bright{
+	margin: 40px 40px 40px 0;
+	color: white;
+}
+hr.star-dark{
+	margin: 40px auto 30px;
+	max-width: 512px;
+	color: #888;
+	text-align: center;
+}
+
+hr.star-bright:after, hr.star-dark:after {
+	right: -40px;
+	content: "\f121";
+	font-family: FontAwesome;
+	display: inline-block;
+	position: relative;
+	top: -.8em;
+	padding: 0 0.25em;
+	font-size: 2em;
+}
+
+hr.star-dark:after {
+	color: #888;
+	right: 0;
+}
+
+.intro-text{
+	display: flex;
+	background: #aaa;
+	font-size: 0.75em;
+	padding-top: 130px;
+}
+
+.intro-text img {
+	width: 250px;
+	height: 250px;
+	margin: 40px 50px;
+}
+
+.intro-left {
+	margin-left: 50px;
+	align-self: center;
+}
+
+.intro-left p {
+	color: white;
+	font-size: 1.5em;
+}
+
+.content-middle {
+	margin: 0;
+	padding: 40px 0;
+	background: #eee;
+}
+
+.content-middle h2 {
+	margin: 0;
+	color: #888;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.grid {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	margin: 20px auto;
+	padding: 0;
+	list-style: none;
+
+}
+.grid li {
+	margin: 20px;
+	max-width: 420px;
+}
+.grid img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+.content-contact{
+	background: #eee;
+	margin: 0;
+}
+
+.content-contact h2{
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	color: #888;
+	font-weight: bold;
+}
+
+.content-contact>div {
+	display: flex;
+	margin: 0;
+	padding: 40px;
+	justify-content: space-between;
+	
+}
+
+.content-contact form {
+	width: 50%;
+	margin-left: 40px;
+	margin-right: 80px;
+}
+
+.content-contact>div>div{
+	width: 50%;
+	margin-left: 80px;
+	margin-right: 40px;
+}
+
+form .row:first-child .form-item {
+	border-top: 1px solid #fff;
+}
+
+form {
+	
+}
+
+.form-item {
+	position: relative;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #bbb;
+}
+
+.form-item input, .form-item textarea {
+	z-index: 1;
+	position: relative;
+	padding-right: 0;
+	padding-left: 0;
+	border: 0;
+	border-radius: 0;
+	font-size: 1.5em;
+	background: 0 0;
+	box-shadow: none!important;
+	resize: none;
+	width: 100%;
+}
+
+.form-item label {
+	display: block;
+	z-index: 0;
+	position: relative;
+	top: 2em;
+	margin: 0;
+	font-size: .85em;
+	line-height: 1.764705882em;
+	vertical-align: middle;
+	vertical-align: baseline;
+	opacity: 0;
+	transition: top .3s ease,opacity .3s ease;
+}
+
+.form-item-filled label {
+	top: 0;
+	opacity: 1;
+	color: #aaa;
+}
+
+.form-item-focused label {
+	color: #722872;
+}
+
+.button {
+	color: #fff;
+	border: solid 2px #fff;
+	border-radius: 50%;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 48px;
+	transition: all .3s ease-in-out;
+}
+
+.content-text {
+}
+
+.content-text p {
+	margin: 20px auto 0;
+}
+
+/*.content-text p:nth-child(2){
+	margin-top: 80px;
+}*/
+
+.content-text p:nth-child(3) {
+	margin-top: 280px;
+}
+
+footer {
+	background: #aaa;
+}
+
+.footer-link {
+	margin: 0 auto;
+	text-align: center;
+	padding: 40px 20px;
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+}
+
+div.footer-link div:first-child{
+	margin: 20px 80px;
+}
+div.footer-link div:last-child{
+	margin: 20px 80px;
+}
+.text-about {
+	color: white;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+
+#text-author {
+	color: white;
+	margin-top: 10px;
+}
+
+#text-author a {
+	color: rgb(114, 40, 114);
+}
+
+.ul-contact {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+.ul-contact li {
+	margin: 5px;
+}
+
+.footer-about {
+	text-align: center;
+	background: rgb(114, 40, 114);
+	padding: 20px 0;
+}
+.footer-about p {
+	color: white;
+	margin-bottom: 0;
+}
