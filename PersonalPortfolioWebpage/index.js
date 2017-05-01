@@ -36,16 +36,23 @@ $('body').scrollspy({target: '.navbar-fixed-top'})
 
 $('.navbar-collapse ul li a').click(function(){
 	$(".navbar-collapse").collapse('hide');
-
+	$('.navbar-toggle').addClass('collapsed').blur();
 });
 
+// Hide navbar menu when option is selected
+$('.navbar-collapse ul li a').click(function() {
+  $('.navbar-collapse').collapse('hide');
+  $('.navbar-toggle').addClass('collapsed').blur();
+});
+
+//Add animation after click
 $(function() {
-	$('body').on('click', 'a.scollable', function(event){
+	$('body').on('click', 'a.scrollable', function(event){
 		var $anchor = $(this);
 		$('html, body').stop().animate({
 			scrollTop: $($anchor.attr('href'))
 			.offset().top
-		}, 1500, 'easeInOutExpo');
+		}, 500, 'easeInOutExpo');
 		event.preventDefault();
 	});
 });
